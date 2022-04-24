@@ -29,15 +29,17 @@ const Project = ({ project }) => {
           <div className={styles.website}>
             <FontAwesomeIcon icon={faUpRightFromSquare} />
             <a href={project.website} target="_blank" rel="noopener noreferrer">
-              {project.website}
+              {project.websiteTitle ? project.websiteTitle : project.website}
             </a>
           </div>
         )}
         <div className={styles.tech}>{project.tech}</div>
       </div>
-      <div className={styles.right}>
-        <img src={project.image} alt="" />
-      </div>
+      {project.image && (
+        <div className={styles.right}>
+          <img src={project.image} alt="" />
+        </div>
+      )}
     </Wrapper>
   );
 };
