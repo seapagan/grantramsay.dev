@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <nav className={styles.nav}>
-        <div className={styles.badge}>Grant Ramsay</div>
+        <div className={styles.badge}>Open Source projects</div>
         <ul className={styles.menuItems}>
           <li className={styles.iconLink}>
             <FontAwesomeIcon icon={faUpRightFromSquare} />

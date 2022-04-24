@@ -1,5 +1,8 @@
 import React from "react";
 
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import styles from "../css/Footer.module.css";
 
 const Footer = () => {
@@ -7,14 +10,16 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.copyright}>
+          <FontAwesomeIcon icon={faGithub} />
+          &nbsp;
           <a
-            href="https://github.com/seapagan/dev-portfolio-app"
+            href="https://github.com/gnramsay/grantramsay.dev"
             className={styles.link}
             rel="noopener noreferrer"
             target="_blank">
-            Developer Portfolio App
+            GitHub repository
           </a>
-          , &copy;Grant Ramsay 2021
+          , &copy;Grant Ramsay 2022
         </div>
         <div className={styles.license}>
           Released under the{" "}

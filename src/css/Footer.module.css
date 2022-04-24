@@ -24,9 +24,9 @@
 .link {
   text-decoration: none;
   justify-self: center;
-  color: var(--color-link-footer);
+  color: red !important;
 }
 
 .link:hover {
-  color: var(--color-link-footer-hover);
+  color: hsl(0, 100%, 30%) !important;
 }
