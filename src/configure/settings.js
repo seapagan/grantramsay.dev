@@ -1,4 +1,8 @@
 export const settings = {
+  user: {
+    name: "Grant Ramsay",
+    website: "https://www.gnramsay.com",
+  },
   projects: [
     {
       name: "dev-portfolio-app",
@@ -97,10 +101,10 @@ export const settings = {
       title: "Update Repo",
       summary:
         "A Ruby Gem to keep multiple locally-cloned Git Repositories up to " +
-        "date. The website code is in the repository and generated from data " +
-        "files using Webpack, soon to be re-written in React. About 50% of " +
-        "the application is covered by RSpec tests, working to improve that " +
-        "figure.",
+        "date. The website code is also in the repository and generated from " +
+        "data files using Webpack, soon to be re-written in React. About 50% " +
+        "of the application is covered by RSpec tests, working to improve " +
+        "that figure.",
       github: "seapagan/update_repo",
       website: "https://updaterepo.grantramsay.dev",
       image: "assets/images/ruby.jpg",
@@ -111,8 +115,8 @@ export const settings = {
       title: "Confoog",
       summary:
         "A simple Gem to add a YAML configuration file to your Ruby script / " +
-        "Gem. This Gem is fully functional and I have been using it in" +
-        "several Ruby projects for years with no issues. The Gem is well" +
+        "Gem. This Gem is fully functional and I have been using it in " +
+        "several Ruby projects for years with no issues. The Gem is well " +
         "documented on it's own website, the code for which is in the repo.",
       github: "seapagan/confoog",
       website: "https://confoog.grantramsay.dev",
