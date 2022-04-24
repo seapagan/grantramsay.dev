@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/grantramsay.dev/static/css/main.c9a0f60e.css",
+    "main.js": "/grantramsay.dev/static/js/main.cc220e61.js",
+    "index.html": "/grantramsay.dev/index.html",
+    "main.c9a0f60e.css.map": "/grantramsay.dev/static/css/main.c9a0f60e.css.map",
+    "main.cc220e61.js.map": "/grantramsay.dev/static/js/main.cc220e61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9a0f60e.css",
+    "static/js/main.cc220e61.js"
+  ]
+}
