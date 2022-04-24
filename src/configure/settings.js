@@ -4,9 +4,23 @@ export const settings = {
       name: "dev-portfolio-app",
       title: "Developers Portfolio",
       summary:
-        "A stand-alone React-based developers portfolio website, taking all data from local JSON files and displaying live information about your Github repositories (using their GraphGL API). Fully Responsive design.",
+        "A stand-alone React-based developers portfolio website, " +
+        "taking all data from local JSON files and displaying live " +
+        "information about your Github repositories (using their GraphGL " +
+        "API). Fully Responsive design.",
       image: "assets/images/project-placeholder.png",
       github: "seapagan/dev-portfolio-app",
+      website: "",
+      tech: "React JS",
+    },
+    {
+      name: "grantramsay.dev",
+      title: "Website : www.grantramsay.dev",
+      summary:
+        "React code for this website. Take a list of projects from a config " +
+        "file and list them on the page with links, image, summary etc.",
+      image: "assets/images/project-placeholder.png",
+      github: "seapagan/grantramsay.dev",
       website: "",
       tech: "React JS",
     },
@@ -14,7 +28,8 @@ export const settings = {
       name: "vscode-create-python-module",
       title: "VSCode Extension : Create Python Module",
       summary:
-        "Basic VSCode extension to create a new empty Python Module. Published on the VSCode Marketplace and Open VSX",
+        "Basic VSCode extension to create a new empty Python Module. " +
+        "Published on the VSCode Marketplace and Open VSX",
       image: "assets/images/project-placeholder.png",
       github: "gnramsay/vscode-create-python-module",
       website: "",
@@ -33,7 +48,9 @@ export const settings = {
       name: "oot-get",
       title: "OOTS-Get",
       summary:
-        "Command-line Python package to download all the comic images for the 'Order of the Stick' webcomic. Uses the 'Beautiful Soup' package for web-scraping.",
+        "Command-line Python package to download all the comic images for " +
+        "the 'Order of the Stick' webcomic. Uses the 'Beautiful Soup' " +
+        "package for web-scraping.",
       image: "assets/images/project-placeholder.png",
       github: "gnramsay/vscode-create-python-module",
       website: "",
@@ -43,7 +60,8 @@ export const settings = {
       name: "linux-comfy-chair",
       title: "Linux Comfy Chair",
       summary:
-        "Auto provision a new linux install with scripting tools and other handy items inlcuding latest Pytho, Ruby, Node, Perl and more.",
+        "Auto provision a new linux install with scripting tools and other " +
+        "handy items inlcuding latest Python, Ruby, Node, Perl and more.",
       image: "assets/images/project-placeholder.png",
       github: "seapagan/linux-comfy-chair",
       website: "",
