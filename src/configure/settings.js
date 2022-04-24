@@ -16,13 +16,16 @@ export const settings = {
     },
     {
       name: "grantramsay.dev",
-      title: "Website : www.grantramsay.dev",
+      title: "Website : 'grantramsay.dev'",
       summary:
         "React code for this website. Take a list of projects from a config " +
         "file and list them on the page with links, image, summary etc. " +
-        "Responsive design.",
+        "Responsive design. Currently quite plain, but I intend to add more " +
+        "features shortly including carousels, pull star/fork etc data from " +
+        "GitHub and more.",
       github: "gnramsay/grantramsay.dev",
       website: "https://www.grantramsay.dev",
+      image: "assets/images/react.png",
       tech: "React JS",
     },
     {
@@ -65,16 +68,42 @@ export const settings = {
       tech: "Typescript",
     },
     {
+      name: "trekpedia",
+      title: "Trekpedia",
+      summary:
+        "A fun personal project to scrape the 'Star Trek' Wikipedia pages " +
+        "and generate JSON files with Series, Season and Episode data. This " +
+        "is a live ongoing project, I will be adding more data to the files " +
+        "as time permits. Written in Python. The primary point of this data " +
+        "is to provide some 'real-world' data to aid in developing API's ",
+      github: "gnramsay/trekpedia",
+      image: "assets/images/python.png",
+      tech: "Python",
+    },
+    {
+      name: "trekpedia-api-rails",
+      title: "Rails-based API for the above Trekpedia data",
+      summary:
+        "A work-in-progress to provide a basic API serving the Trekpedia " +
+        "data written in Ruby on Rails. More features will be added shortly. " +
+        "I am using this to learn writing API's with Rails.",
+      image: "assets/images/rails.png",
+      github: "gnramsay/trekpedia-api-rails",
+
+      tech: "Ruby on Rails",
+    },
+    {
       name: "update_repo",
       title: "Update Repo",
       summary:
-        "A Ruby Gem to keep multiple cloned Git Repositories up to " +
+        "A Ruby Gem to keep multiple locally-cloned Git Repositories up to " +
         "date. The website code is in the repository and generated from data " +
         "files using Webpack, soon to be re-written in React. About 50% of " +
-        "the application is covered by RSpec tests, working to improve that" +
+        "the application is covered by RSpec tests, working to improve that " +
         "figure.",
       github: "seapagan/update_repo",
       website: "https://updaterepo.grantramsay.dev",
+      image: "assets/images/ruby.jpg",
       tech: "Ruby, RSpec",
     },
     {
@@ -86,6 +115,8 @@ export const settings = {
         "several Ruby projects for years with no issues. The Gem is well" +
         "documented on it's own website, the code for which is in the repo.",
       github: "seapagan/confoog",
+      website: "https://confoog.grantramsay.dev",
+      image: "assets/images/ruby.jpg",
       tech: "Ruby, Jekyll",
     },
     {
@@ -97,6 +128,7 @@ export const settings = {
         "package for web-scraping. Option to only check for new comics. " +
         "This was a personal learning-exercise on Python Web-scraping.",
       github: "gnramsay/oots-get",
+      image: "assets/images/python.png",
       website: "",
       tech: "Python",
     },
@@ -104,8 +136,11 @@ export const settings = {
       name: "linux-comfy-chair",
       title: "Linux Comfy Chair",
       summary:
-        "Auto provision a new linux install with scripting tools and other " +
-        "handy items inlcuding latest Python, Ruby, Node, Perl and more.",
+        "Auto provision a new (Ubuntu) linux install with latest updates, " +
+        "scripting tools and other handy items inlcuding latest Python, " +
+        "Ruby, Node, Perl and more. " +
+        "Great to get a new Virtual Machine or Cloud appliance quickly " +
+        "running and updated with no user input.",
       github: "seapagan/linux-comfy-chair",
       website: "",
       tech: "Shell script",
