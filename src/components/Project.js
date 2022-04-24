@@ -11,11 +11,18 @@ import styles from "../css/Project.module.scss";
 const Project = ({ project }) => {
   return (
     <Wrapper className={styles.projectContainer}>
-      <div className={styles.left}>
+      <div>
         <div className={styles.title}>{project.title}</div>
         <div className={styles.summary}>{project.summary}</div>
+      </div>
+      {project.image && (
+        <div>
+          <img className={styles.image} src={project.image} alt="" />
+        </div>
+      )}
+      <div className={styles.linksWrapper}>
         {project.github && (
-          <div className={styles.github}>
+          <span className={styles.github}>
             <FontAwesomeIcon icon={faGithub} />
             <a
               href={`https://www.github.com/${project.github}`}
@@ -23,23 +30,18 @@ const Project = ({ project }) => {
               rel="noopener noreferrer">
               {project.github}
             </a>
-          </div>
+          </span>
         )}
         {project.website && (
-          <div className={styles.website}>
+          <span className={styles.website}>
             <FontAwesomeIcon icon={faUpRightFromSquare} />
             <a href={project.website} target="_blank" rel="noopener noreferrer">
               {project.websiteTitle ? project.websiteTitle : project.website}
             </a>
-          </div>
+          </span>
         )}
-        <div className={styles.tech}>{project.tech}</div>
       </div>
-      {project.image && (
-        <div className={styles.right}>
-          <img src={project.image} alt="" />
-        </div>
-      )}
+      <div className={styles.tech}>{project.tech}</div>
     </Wrapper>
   );
 };

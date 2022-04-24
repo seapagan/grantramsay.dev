@@ -2,50 +2,83 @@
 /*                      Styles for the Project component                      */
 /* -------------------------------------------------------------------------- */
 .projectContainer {
-  width: 80%;
   margin: 1em auto;
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 1fr auto;
   justify-content: space-between;
-  gap: .5em;
+  gap: 0.5em;
 
-
-  div > a {
+  span > a {
     text-decoration: none;
-    // color: rgb(200, 74, 101);
     color: hsl(0, 10%, 35%);
   }
 
   .title {
     font-size: 1.5em;
     font-weight: 600;
-    // grid-column: 1/3;
   }
 
-  .summary{
+  .summary {
     padding: 0.5em;
   }
 
-  .github {
-    margin: 0.2em 0.5em;
+  .linksWrapper {
     display: flex;
-    gap: 0.2em;
-    align-items: center;
+    justify-content: flex-start;
+    grid-column: 1/3;
+
+    .github {
+      margin: 0.2em 0.5em;
+      display: flex;
+      gap: 0.2em;
+      align-items: center;
+    }
+
+    .website {
+      margin: 0.2em 0.5em;
+      display: flex;
+      gap: 0.2em;
+      align-items: center;
+    }
+
+
   }
 
-  .website {
-    margin: 0.2em 0.5em;
-    display: flex;
-    gap: 0.2em;
-    align-items: center;
-  }
+    .image {
+      border-radius: 0.5em;
+      border: 1px solid black;
+    }
 
   .tech {
     margin: 0.5em 0.5em;
     border: 1px solid black;
     display: inline-block;
+    width: fit-content;
     padding: 0 0.5em;
     border-radius: 0.3em;
     background-color: hsl(217, 100%, 83%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+
+    .image {
+      width: 100%;
+    }
+
+    .linksWrapper {
+      flex-direction: column;
+      grid-column: unset;
+    }
+
+    .title {
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    .summary {
+    }
   }
 }
