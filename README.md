@@ -3,6 +3,9 @@
 This is a showcase site for my own personal projects. It will be live at
 [https://www.grantramsay.dev][grdev]
 
+Currently very plain and basic, but I intend to add carousels and other fancy
+stuff in time.
+
 [grdev]: https://www.grantramsay.dev
 
 ## Stack
