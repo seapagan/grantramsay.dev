@@ -7,8 +7,9 @@ export const settings = {
         "A stand-alone React-based developers portfolio website, " +
         "taking all data from local JSON files and displaying live " +
         "information about your Github repositories (using their GraphGL " +
-        "API). Fully Responsive design.",
-      image: "assets/images/project-placeholder.png",
+        "API). Has sections for Experience, Skills and more. Fully Responsive" +
+        " design.",
+      image: "assets/images/dev-portfolio.png",
       github: "seapagan/dev-portfolio-app",
       website: "https://www.gnramsay.com",
       tech: "React JS",
@@ -19,22 +20,34 @@ export const settings = {
       summary:
         "React code for this website. Take a list of projects from a config " +
         "file and list them on the page with links, image, summary etc.",
-      image: "assets/images/project-placeholder.png",
-      github: "seapagan/grantramsay.dev",
+      github: "gnramsay/grantramsay.dev",
       website: "",
       tech: "React JS",
+    },
+    {
+      name: "myblog",
+      title: "Django-based Blog Engine",
+      summary:
+        "A Django-based Blog engine with Comments, Tags, Likes, Pinned " +
+        "Posts,  WYSIWYG Editing and more. Fully Responsive. Still a Work " +
+        "in progress with many more features to add.",
+      github: "seapagan/myblog",
+      website: "",
+      tech: "Python, Django",
     },
     {
       name: "django-rundevserver",
       title: "Django Addon : RunDevServer",
       summary:
         "A Django Extension to run a configurable Django development server " +
-        "from the command line",
-      image: "assets/images/project-placeholder.png",
-      github: "gnramsay/vscode-create-python-module",
+        "from the command line with DEBUG mode automatically enabled, even " +
+        "if disabled from the Application settings. Also allows custom port " +
+        "and bind address to be specified separate from the production set.",
+      image: "assets/images/django.png",
+      github: "seapagan/django-rundevserver",
       website: "https://pypi.org/project/django-rundevserver/",
       websiteTitle: "View on Pypi.org",
-      tech: "Typescript",
+      tech: "Python, Django",
     },
     {
       name: "vscode-create-python-module",
@@ -42,7 +55,7 @@ export const settings = {
       summary:
         "Basic VSCode extension to create a new empty Python Module. " +
         "Published on the VSCode Marketplace and Open VSX",
-      image: "assets/images/project-placeholder.png",
+      image: "assets/images/vscode.png",
       github: "gnramsay/vscode-create-python-module",
       website:
         "https://marketplace.visualstudio.com/items?itemName=gnramsay.create-python-module",
@@ -64,9 +77,10 @@ export const settings = {
       summary:
         "Command-line Python package to download all the comic images for " +
         "the 'Order of the Stick' webcomic. Uses the 'Beautiful Soup' " +
-        "package for web-scraping.",
+        "package for web-scraping. Option to only check for new comics. " +
+        "This was an personal learning-exercise on Python Web-scraping.",
       image: "assets/images/project-placeholder.png",
-      github: "gnramsay/vscode-create-python-module",
+      github: "gnramsay/oots-get",
       website: "",
       tech: "Python",
     },
