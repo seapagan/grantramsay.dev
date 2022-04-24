@@ -10,7 +10,7 @@ export const settings = {
         "API). Fully Responsive design.",
       image: "assets/images/project-placeholder.png",
       github: "seapagan/dev-portfolio-app",
-      website: "",
+      website: "https://www.gnramsay.com",
       tech: "React JS",
     },
     {
@@ -25,6 +25,18 @@ export const settings = {
       tech: "React JS",
     },
     {
+      name: "django-rundevserver",
+      title: "Django Addon : RunDevServer",
+      summary:
+        "A Django Extension to run a configurable Django development server " +
+        "from the command line",
+      image: "assets/images/project-placeholder.png",
+      github: "gnramsay/vscode-create-python-module",
+      website: "https://pypi.org/project/django-rundevserver/",
+      websiteTitle: "View on Pypi.org",
+      tech: "Typescript",
+    },
+    {
       name: "vscode-create-python-module",
       title: "VSCode Extension : Create Python Module",
       summary:
@@ -32,7 +44,9 @@ export const settings = {
         "Published on the VSCode Marketplace and Open VSX",
       image: "assets/images/project-placeholder.png",
       github: "gnramsay/vscode-create-python-module",
-      website: "",
+      website:
+        "https://marketplace.visualstudio.com/items?itemName=gnramsay.create-python-module",
+      websiteTitle: "View on Visual Studio Marketplace",
       tech: "Typescript",
     },
     {
