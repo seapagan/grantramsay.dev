@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------------------- */
+/*                      Styles for the Project component                      */
+/* -------------------------------------------------------------------------- */
+.projectContainer {
+  width: 80%;
+  margin: 0.5em auto;
+  display: grid;
+  grid-template-columns: 2fr auto;
+  justify-content: space-between;
+  gap: 0.5em;
+
+
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    // grid-column: 1/3;
+  }
+
+  .summary{
+    padding: 0.5em;
+  }
+
+  .github {
+    padding: 0.5em;
+
+  }
+
+  .website {
+    padding: 0.5em;
+
+  }
+}
