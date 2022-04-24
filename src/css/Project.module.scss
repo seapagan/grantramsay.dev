@@ -3,13 +3,17 @@
 /* -------------------------------------------------------------------------- */
 .projectContainer {
   width: 80%;
-  margin: 0.5em auto;
+  margin: 1em auto;
   display: grid;
   grid-template-columns: 2fr auto;
   justify-content: space-between;
-  gap: 0.5em;
+  gap: .5em;
 
 
+  div > a {
+    text-decoration: none;
+    color: rgb(200, 74, 101);
+  }
 
   .title {
     font-size: 1.5em;
@@ -22,12 +26,25 @@
   }
 
   .github {
-    padding: 0.5em;
-
+    margin: 0.2em 0.5em;
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
   }
 
   .website {
-    padding: 0.5em;
+    margin: 0.2em 0.5em;
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+  }
 
+  .tech {
+    margin: 0.5em 0.5em;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0 0.5em;
+    border-radius: 0.3em;
+    background-color: hsl(217, 100%, 83%);
   }
 }
