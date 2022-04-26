@@ -45,6 +45,25 @@ export const settings = {
       tech: "Python, Django",
     },
     {
+      name: "uprn-mangle",
+      title: "Fast accurate UK address search",
+      summary:
+        "This is a Django API linked with a React Front-end. Using UPRN " +
+        "data from Ordance Survey, it offers a pin-point accurate address " +
+        "search with exact GPS location and links to Google Maps & " +
+        "OpenStreetMap. This allows navigation to the actual property " +
+        "address as opposed to simply the approximate area. The original " +
+        "data does not lend itself well to loading into a database, so first " +
+        "it is mangled into suitable formats, requiring the filtering and " +
+        "merging of dozens of different CSV files. Served using Django Rest " +
+        "Framework with lightning fast search. The front end needs updating " +
+        "as it was one of my first React attempts.",
+      github: "seapagan/uprn-mangle",
+      image: "assets/images/django.png",
+      website: "",
+      tech: "Python, Django, DRF, React",
+    },
+    {
       name: "django-rundevserver",
       title: "Django Addon : RunDevServer",
       summary:
