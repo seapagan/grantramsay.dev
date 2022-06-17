@@ -61,12 +61,12 @@ const ProjectList = ({ settings }) => {
 
   const { loading, error, data } = useQuery(githubApiQuery);
 
-  if (error)
-    return (
-      <section>
-        <div>{`Error! ${error.message}`}</div>
-      </section>
-    );
+  // if (error)
+  //   return (
+  //     <section>
+  //       <div>{`Error! ${error.message}`}</div>
+  //     </section>
+  //   );
 
   if (!loading) {
     console.log(data);
