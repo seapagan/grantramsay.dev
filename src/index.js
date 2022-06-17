@@ -20,7 +20,7 @@ const httpLink = createHttpLink({
 });
 const authLink = new ApolloLink((operation, forward) => {
   // Retrieve the authorization token from settings.
-  const token = settings.githubToken;
+  const token = process.env.REACT_APP_GITHUB_PAT;
 
   // Use the setContext method to set the HTTP headers.
   operation.setContext({
