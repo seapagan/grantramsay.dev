@@ -8,7 +8,7 @@ export const settings = {
     "GitHub accounts. some are complete, others still in progress and some " +
     "barely started. Each has a link to the relevant GitHub repository and " +
     "a live example if appliciable. The source code for this page (written " +
-    "in React) is availiable from it's public repository.",
+    "in React) is available from it's public repository.",
   projects: [
     {
       name: "dev-portfolio-app",
