@@ -6,6 +6,7 @@ import styles from "../css/ProjectList.module.scss";
 
 const ProjectList = ({ settings }) => {
   const { header, projects } = settings;
+
   return (
     <div>
       <div className={styles.intro}>
