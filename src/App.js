@@ -10,8 +10,8 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      <Header />
-      <ProjectList projects={settings.projects} />
+      <Header user={settings.user} />
+      <ProjectList settings={settings} />
       <Footer />
     </div>
   );
