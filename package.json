@@ -25,12 +25,6 @@
     "predeploy": "yarn build",
     "deploy": "echo 'www.grantramsay.dev' > ./build/CNAME && gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
