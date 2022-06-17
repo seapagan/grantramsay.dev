@@ -59,15 +59,8 @@ const ProjectList = ({ settings }) => {
     }
   `;
 
-  // const { loading, error, data } = useQuery(githubApiQuery);
-  const { loading, data } = useQuery(githubApiQuery);
-
-  // if (error)
-  //   return (
-  //     <section>
-  //       <div>{`Error! ${error.message}`}</div>
-  //     </section>
-  //   );
+  const { loading, error, data } = useQuery(githubApiQuery);
+  // const { loading, data } = useQuery(githubApiQuery);
 
   if (!loading) {
     console.log(data);
@@ -75,6 +68,12 @@ const ProjectList = ({ settings }) => {
 
   return (
     <div>
+      {error && (
+        <section className={styles.githubError}>
+          <div>{"Error! Can't read GitHub data - Check your Access Key."}</div>
+          <div>{`${error.message}`}</div>
+        </section>
+      )}
       <div className={styles.intro}>
         <p>{header}</p>
       </div>

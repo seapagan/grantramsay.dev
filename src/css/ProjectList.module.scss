@@ -3,6 +3,18 @@
   padding: 0.5em;
 }
 
+.githubError {
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-align: center;
+  border: 1px solid red;
+  margin-top: 0.5em;
+  background-color: rgba(255, 0, 0, 0.536);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(207, 8, 8, 0.635);
+}
+
 @media screen and (max-width: 700px) {
   .intro {
     padding: 1em;
