@@ -1,4 +1,5 @@
 export const settings = {
+  github_token: "MY SECRET TOKEN",
   user: {
     name: "Grant Ramsay",
     website: "https://www.gnramsay.com",
