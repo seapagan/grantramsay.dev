@@ -10,7 +10,6 @@ import {
   InMemoryCache,
 } from "@apollo/client";
 
-import { settings } from "./configure/settings";
 import App from "./App";
 
 import "./index.scss";

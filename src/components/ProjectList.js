@@ -59,7 +59,8 @@ const ProjectList = ({ settings }) => {
     }
   `;
 
-  const { loading, error, data } = useQuery(githubApiQuery);
+  // const { loading, error, data } = useQuery(githubApiQuery);
+  const { loading, data } = useQuery(githubApiQuery);
 
   // if (error)
   //   return (
