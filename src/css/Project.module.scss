@@ -44,6 +44,7 @@
   }
 
   .tech {
+    grid-column: span 2;
     margin: 0.5em 0.5em;
     border: 1px solid black;
     display: inline-block;
@@ -75,7 +76,8 @@
       text-align: center;
     }
 
-    .summary {
+    .tech {
+      grid-column: unset;
     }
   }
 }
