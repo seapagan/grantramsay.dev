@@ -5,33 +5,41 @@
   background-color: rgba(225, 225, 225, 0.652);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   column-gap: 1em;
   row-gap: 0.2em;
 
   div {
     text-align: left;
   }
-
-  .metaUnit {
-    display: flex;
-    flex-direction: row;
-    gap: 0.3em;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .lastUpdated {
-    grid-column: span 2;
-  }
+}
+.metaUnit {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+.lastUpdated,
 .forked {
+  grid-column: span 2;
+}
+
+.footer {
+  display: flex;
+  column-gap: 2em;
 }
 
 @media screen and (max-width: 700px) {
-  .githubMeta {
+  .githubMeta,
+  .lastUpdated,
+  .forked {
     grid-column: unset;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 

@@ -83,14 +83,14 @@ const GithubMeta = ({ data, project }) => {
             <GoEye />
             {projectData.watchers.totalCount} Watchers
           </a>
-          {
-            <div className={styles.metaUnit}>
-              <GoBook />
-              {projectData.licenseInfo
-                ? projectData.licenseInfo.name
-                : "No License"}
-            </div>
-          }
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.metaUnit}>
+            <GoBook />
+            {projectData.licenseInfo
+              ? projectData.licenseInfo.name
+              : "No License"}
+          </div>
           <div className={`${styles.metaUnit} ${styles.lastUpdated}`}>
             <GoClock />
             {/* Updated : {projectData.defaultBranchRef.target.authoredDate} */}
