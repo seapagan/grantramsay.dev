@@ -118,7 +118,12 @@ const GithubMeta = ({ data, project }) => {
         )}
       </>
     );
+  } else {
+    return (
+      <div className={styles.loading}>
+        Loading repository data from Github ...
+      </div>
+    );
   }
 };
-
 export default GithubMeta;
