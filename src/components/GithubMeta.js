@@ -94,7 +94,8 @@ const GithubMeta = ({ data, project }) => {
           <GoClock />
           {/* Updated : {projectData.defaultBranchRef.target.authoredDate} */}
           Updated :{" "}
-          {new Intl.DateTimeFormat("en-GB", {
+          {new Intl.DateTimeFormat("default", {
+            weekday: "long",
             year: "numeric",
             month: "long",
             day: "2-digit",
