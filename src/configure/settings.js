@@ -11,12 +11,6 @@ export const settings = {
     "in React) is available from it's public repository.",
   projects: [
     {
-      name: "badges",
-      title: "Developers Portfolio",
-      summary: "Test of fork",
-      github: "gnramsay/badges",
-    },
-    {
       name: "dev-portfolio-app",
       title: "Developers Portfolio",
       summary:
