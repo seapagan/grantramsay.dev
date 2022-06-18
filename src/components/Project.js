@@ -4,11 +4,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import GithubMeta from "./GithubMeta";
 import Wrapper from "./Wrapper";
 
 import styles from "../css/Project.module.scss";
 
-const Project = ({ project }) => {
+const Project = ({ project, data }) => {
   return (
     <Wrapper className={styles.projectContainer}>
       <div>
@@ -41,7 +42,8 @@ const Project = ({ project }) => {
           </span>
         )}
       </div>
-      <div className={styles.tech}>{project.tech}</div>
+      <GithubMeta data={data} project={project} />
+      {project.tech && <div className={styles.tech}>{project.tech}</div>}
     </Wrapper>
   );
 };

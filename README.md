@@ -11,5 +11,6 @@ stuff in time.
 ## Stack
 
 Written completely in ReactJS, pulling data from a local file for each project.
-It will also pull repo details from Github for each project if appliciable. The
-project is full responsive and mobile-friendly.
+It also uses the GitHub GraphQL service to pull metadata (number of commits,
+stars, watchers, open Pull Requests etc etc) for each project if appliciable.
+The project is full responsive and mobile-friendly.

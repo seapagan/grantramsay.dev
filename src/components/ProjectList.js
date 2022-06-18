@@ -28,6 +28,13 @@ const ProjectList = ({ settings }) => {
           name
           isArchived
           isFork
+          parent {
+            url
+            owner {
+              login
+            }
+            name
+          }
           stargazerCount
           primaryLanguage {
             name
@@ -39,19 +46,23 @@ const ProjectList = ({ settings }) => {
             name
           }
           defaultBranchRef {
-            associatedPullRequests {
-              totalCount
-            }
             name
             target {
               ... on Commit {
                 history {
                   totalCount
                 }
+                authoredDate
               }
             }
           }
           watchers {
+            totalCount
+          }
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          pullRequests(states: OPEN) {
             totalCount
           }
         }
@@ -59,12 +70,11 @@ const ProjectList = ({ settings }) => {
     }
   `;
 
-  const { loading, error, data } = useQuery(githubApiQuery);
-  // const { loading, data } = useQuery(githubApiQuery);
+  // const { loading, error, data } = useQuery(githubApiQuery);
+  const { error, data } = useQuery(githubApiQuery);
 
-  if (!loading) {
-    console.log(data);
-  }
+  // if (!loading) {
+  // }
 
   return (
     <div>
@@ -74,11 +84,12 @@ const ProjectList = ({ settings }) => {
           <div>{`${error.message}`}</div>
         </section>
       )}
+
       <div className={styles.intro}>
         <p>{header}</p>
       </div>
       {projects.map((project, index) => {
-        return <Project key={index} project={project} />;
+        return <Project key={index} project={project} data={data} />;
       })}
     </div>
   );

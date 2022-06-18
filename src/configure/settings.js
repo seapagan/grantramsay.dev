@@ -146,7 +146,7 @@ export const settings = {
       github: "seapagan/confoog",
       website: "https://confoog.grantramsay.dev",
       image: "assets/images/ruby.jpg",
-      tech: "Ruby, Jekyll",
+      tech: "Ruby, RSpec, Jekyll",
     },
     {
       name: "oot-get",
