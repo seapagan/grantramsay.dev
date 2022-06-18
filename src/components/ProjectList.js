@@ -28,6 +28,13 @@ const ProjectList = ({ settings }) => {
           name
           isArchived
           isFork
+          parent {
+            url
+            owner {
+              login
+            }
+            name
+          }
           stargazerCount
           primaryLanguage {
             name
