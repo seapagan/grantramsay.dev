@@ -39,19 +39,23 @@ const ProjectList = ({ settings }) => {
             name
           }
           defaultBranchRef {
-            associatedPullRequests {
-              totalCount
-            }
             name
             target {
               ... on Commit {
                 history {
                   totalCount
                 }
+                authoredDate
               }
             }
           }
           watchers {
+            totalCount
+          }
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          pullRequests(states: OPEN) {
             totalCount
           }
         }
