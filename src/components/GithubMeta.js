@@ -34,30 +34,54 @@ const GithubMeta = ({ data, project }) => {
 
     return (
       <div className={styles.githubMeta}>
-        <div className={styles.metaUnit}>
+        <a
+          href={`https://github.com/${user}/${repo}/commits`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <GoGitCommit />
           {projectData.defaultBranchRef.target.history.totalCount} Commits
-        </div>
-        <div className={styles.metaUnit}>
+        </a>
+        <a
+          href={`https://github.com/${user}/${repo}/stargazers`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <GoStar />
           {projectData.stargazerCount} Stars
-        </div>
-        <div className={styles.metaUnit}>
+        </a>
+        <a
+          href={`https://github.com/${user}/${repo}/pulls`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <GoGitPullRequest />
           {projectData.pullRequests.totalCount} Pull Requests
-        </div>
-        <div className={styles.metaUnit}>
+        </a>
+        <a
+          href={`https://github.com/${user}/${repo}/issues`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <VscIssues />
           {projectData.issues.totalCount} Open Issues
-        </div>
-        <div className={styles.metaUnit}>
+        </a>
+        <a
+          href={`https://github.com/${user}/${repo}/network/members`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <GoRepoForked />
           {projectData.forkCount} Forks
-        </div>
-        <div className={styles.metaUnit}>
+        </a>
+        <a
+          href={`https://github.com/${user}/${repo}/watchers`}
+          className={styles.metaUnit}
+          target="_blank"
+          rel="noopener noreferrer">
           <GoEye />
           {projectData.watchers.totalCount} Watchers
-        </div>
+        </a>
         {
           <div className={styles.metaUnit}>
             <GoBook />
