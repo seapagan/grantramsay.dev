@@ -6,10 +6,19 @@
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1em;
+  column-gap: 1em;
+  row-gap: 0.2em;
 
   div {
     text-align: left;
+  }
+
+  .metaUnit {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .lastUpdated {

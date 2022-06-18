@@ -1,5 +1,16 @@
 import React from "react";
 
+import {
+  GoBook,
+  GoClock,
+  GoEye,
+  GoGitCommit,
+  GoGitPullRequest,
+  GoRepoForked,
+  GoStar,
+} from "react-icons/go";
+import { VscIssues } from "react-icons/vsc";
+
 import styles from "../css/GithubMeta.module.scss";
 
 const GithubMeta = ({ data, project }) => {
@@ -19,32 +30,51 @@ const GithubMeta = ({ data, project }) => {
   const [user, repo] = getUser(project);
   // console.log(user, repo);
   if (data) {
-    const project_data = getProjectData(user, repo);
-    console.log(project_data);
+    const projectData = getProjectData(user, repo);
 
     return (
       <div className={styles.githubMeta}>
-        <div className={styles.commits}>
-          {project_data.defaultBranchRef.target.history.totalCount} Commits
+        <div className={styles.metaUnit}>
+          <GoGitCommit />
+          {projectData.defaultBranchRef.target.history.totalCount} Commits
         </div>
-        <div className={styles.stars}>{project_data.stargazerCount} Stars</div>
-        <div className={styles.pullRequests}>
-          {project_data.defaultBranchRef.associatedPullRequests.totalCount} Pull
-          Requests
+        <div className={styles.metaUnit}>
+          <GoStar />
+          {projectData.stargazerCount} Stars
         </div>
-        <div className={styles.forks}>{project_data.forkCount} Forks</div>
-        <div className={styles.watchers}>
-          {project_data.watchers.totalCount} Watchers
+        <div className={styles.metaUnit}>
+          <GoGitPullRequest />
+          {projectData.pullRequests.totalCount} Pull Requests
+        </div>
+        <div className={styles.metaUnit}>
+          <VscIssues />
+          {projectData.issues.totalCount} Open Issues
+        </div>
+        <div className={styles.metaUnit}>
+          <GoRepoForked />
+          {projectData.forkCount} Forks
+        </div>
+        <div className={styles.metaUnit}>
+          <GoEye />
+          {projectData.watchers.totalCount} Watchers
         </div>
         {
-          <div className={styles.license}>
-            {project_data.licenseInfo
-              ? project_data.licenseInfo.name
+          <div className={styles.metaUnit}>
+            <GoBook />
+            {projectData.licenseInfo
+              ? projectData.licenseInfo.name
               : "No License"}
           </div>
         }
-        <div className={styles.lastUpdated}>
-          Updated : {project_data.updatedAt}
+        <div className={`${styles.metaUnit} ${styles.lastUpdated}`}>
+          <GoClock />
+          {/* Updated : {projectData.defaultBranchRef.target.authoredDate} */}
+          Updated :{" "}
+          {new Intl.DateTimeFormat("en-GB", {
+            year: "numeric",
+            month: "long",
+            day: "2-digit",
+          }).format(new Date(projectData.defaultBranchRef.target.authoredDate))}
         </div>
       </div>
     );
