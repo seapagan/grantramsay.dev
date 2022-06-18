@@ -43,7 +43,7 @@ const Project = ({ project, data }) => {
         )}
       </div>
       <GithubMeta data={data} project={project} />
-      <div className={styles.tech}>{project.tech}</div>
+      {project.tech && <div className={styles.tech}>{project.tech}</div>}
     </Wrapper>
   );
 };
