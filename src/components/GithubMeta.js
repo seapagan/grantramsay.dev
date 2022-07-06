@@ -27,8 +27,15 @@ const GithubMeta = ({ data, project }) => {
     return thisProjectData[0];
   };
 
+  const pluralize = (meta, count) => {
+    // return a pluralized string depending on count
+    const template = `${count} ${meta}`;
+
+    return count === 1 ? template : `${template}s`;
+  };
+
   const [user, repo] = getUser(project);
-  // console.log(user, repo);
+
   if (data) {
     const projectData = getProjectData(user, repo);
 
@@ -50,7 +57,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoGitCommit />
-            {parsedData.commits} Commits
+            {pluralize("Commit", parsedData.commits)}
           </a>
           <a
             href={`https://github.com/${user}/${repo}/stargazers`}
@@ -58,7 +65,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoStar />
-            {parsedData.stars} Stars
+            {pluralize("Star", parsedData.stars)}
           </a>
           <a
             href={`https://github.com/${user}/${repo}/pulls`}
@@ -66,7 +73,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoGitPullRequest />
-            {parsedData.pullRequests} Pull Requests
+            {pluralize("Pull Request", parsedData.pullRequests)}
           </a>
           <a
             href={`https://github.com/${user}/${repo}/issues`}
@@ -74,7 +81,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <VscIssues />
-            {parsedData.openIssues} Open Issues
+            {pluralize("Open Issue", parsedData.openIssues)}
           </a>
           <a
             href={`https://github.com/${user}/${repo}/network/members`}
@@ -82,7 +89,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoRepoForked />
-            {parsedData.forks} Forks
+            {pluralize("Fork", parsedData.forks)}
           </a>
           <a
             href={`https://github.com/${user}/${repo}/watchers`}
@@ -90,7 +97,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoEye />
-            {parsedData.watchers} Watchers
+            {pluralize("Watcher", parsedData.watchers)}
           </a>
         </div>
         <div className={styles.footer}>
