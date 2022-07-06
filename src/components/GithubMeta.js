@@ -32,6 +32,15 @@ const GithubMeta = ({ data, project }) => {
   if (data) {
     const projectData = getProjectData(user, repo);
 
+    const parsedData = {
+      commits: projectData.defaultBranchRef.target.history.totalCount,
+      stars: projectData.stargazerCount,
+      pullRequests: projectData.pullRequests.totalCount,
+      openIssues: projectData.issues.totalCount,
+      watchers: projectData.watchers.totalCount,
+      forks: projectData.forkCount,
+    };
+
     return (
       <>
         <div className={styles.githubMeta}>
@@ -41,7 +50,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoGitCommit />
-            {projectData.defaultBranchRef.target.history.totalCount} Commits
+            {parsedData.commits} Commits
           </a>
           <a
             href={`https://github.com/${user}/${repo}/stargazers`}
@@ -49,7 +58,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoStar />
-            {projectData.stargazerCount} Stars
+            {parsedData.stars} Stars
           </a>
           <a
             href={`https://github.com/${user}/${repo}/pulls`}
@@ -57,7 +66,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoGitPullRequest />
-            {projectData.pullRequests.totalCount} Pull Requests
+            {parsedData.pullRequests} Pull Requests
           </a>
           <a
             href={`https://github.com/${user}/${repo}/issues`}
@@ -65,7 +74,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <VscIssues />
-            {projectData.issues.totalCount} Open Issues
+            {parsedData.openIssues} Open Issues
           </a>
           <a
             href={`https://github.com/${user}/${repo}/network/members`}
@@ -73,7 +82,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoRepoForked />
-            {projectData.forkCount} Forks
+            {parsedData.forks} Forks
           </a>
           <a
             href={`https://github.com/${user}/${repo}/watchers`}
@@ -81,7 +90,7 @@ const GithubMeta = ({ data, project }) => {
             target="_blank"
             rel="noopener noreferrer">
             <GoEye />
-            {projectData.watchers.totalCount} Watchers
+            {parsedData.watchers} Watchers
           </a>
         </div>
         <div className={styles.footer}>
