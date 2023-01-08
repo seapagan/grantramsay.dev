@@ -21,8 +21,55 @@ export const settings = {
         " design.",
       image: "assets/images/dev-portfolio.png",
       github: "seapagan/dev-portfolio-app",
+    },
+    {
+      name: "fastapi-template",
+      title: "A reusable API template based on FastAPI",
+      summary:
+        "Configurable template for a FastAPI application, with working " +
+        "Authentication and User systems using JWT, and a CLI tool to " +
+        "configure it, using Postgresql for a database.",
+      image: "assets/images/python.png",
+      github: "seapagan/fastapi-template",
+      website: "",
+      tech: "Python, FastAPI",
+    },
+    {
+      name: "sp-build",
+      title: "Webpack-based build-tool for Frontend development",
+      summary:
+        "This is a setup for plain HTML/CSS/JS coding, when using a Library " +
+        "or Framework is too much. It gives a real-time update in " +
+        "development mode and optimized, minimized, bundled code for " +
+        "production. JS/TS, CSS/SCSS/SASS ready.",
+      image: "assets/images/js-logo.png",
+      github: "seapagan/sb-build",
       website: "https://www.gnramsay.com",
-      tech: "React JS",
+      tech: "Javascript, Webpack",
+    },
+    {
+      name: "shopping-list",
+      title: "Shopping list app using vanilla JavaScript.",
+      summary:
+        "A web-based Shopping List written in plain-vanilla " +
+        "JavaScript, using my sp-build system for development and packaging",
+      image: "assets/images/js-logo.png",
+      github: "seapagan/shopping-list",
+      website: "shopping.seapagan.net",
+      tech: "Javascript, Webpack",
+    },
+    {
+      name: "poectrl",
+      title: "Control the PoE ports on a Ubiquiti TS-8-PRO Switch.",
+      summary:
+        "A system to remotely and automatically control the PoE status of " +
+        "individual ports on multiple Ubiquiti TS-8-Pro Switch, using " +
+        "predefined profiles. Has a CLI and an API to allow applying the " +
+        "profiles. Published on PyPi",
+      image: "assets/images/python.png",
+      github: "seapagan/poectrl",
+      website: "https://pypi.org/project/poectrl/",
+      tech: "Python",
     },
     {
       name: "grantramsay.dev",
@@ -97,6 +144,30 @@ export const settings = {
       tech: "Typescript",
     },
     {
+      name: "openapi-readme",
+      title: "OpenAPI Readme generator.",
+      summary:
+        "Generates Markdown suitable for a README file from a local " +
+        "openapi.json file. Published to Pypi",
+      github: "gnramsay/openapi-readme",
+      image: "assets/images/python.png",
+      website: "https://pypi.org/project/openapi-readme/",
+      tech: "Python",
+    },
+    {
+      name: "linux-comfy-chair",
+      title: "Linux Comfy Chair",
+      summary:
+        "Auto provision a new (Ubuntu) linux install with latest updates, " +
+        "scripting tools and other handy items inlcuding latest Python, " +
+        "Ruby, Node, Perl and more. " +
+        "Great to get a new Virtual Machine or Cloud appliance quickly " +
+        "running and updated with no user input.",
+      github: "seapagan/linux-comfy-chair",
+      website: "",
+      tech: "Shell script",
+    },
+    {
       name: "trekpedia",
       title: "Trekpedia",
       summary:
@@ -120,6 +191,19 @@ export const settings = {
       github: "gnramsay/trekpedia-api-rails",
 
       tech: "Ruby on Rails",
+    },
+    {
+      name: "oot-get",
+      title: "OOTS-Get",
+      summary:
+        "Command-line Python package to download all the comic images for " +
+        "the 'Order of the Stick' webcomic. Uses the 'Beautiful Soup' " +
+        "package for web-scraping. Option to only check for new comics. " +
+        "This was a personal learning-exercise on Python Web-scraping.",
+      github: "gnramsay/oots-get",
+      image: "assets/images/python.png",
+      website: "",
+      tech: "Python",
     },
     {
       name: "update_repo",
@@ -147,32 +231,6 @@ export const settings = {
       website: "https://confoog.grantramsay.dev",
       image: "assets/images/ruby.jpg",
       tech: "Ruby, RSpec, Jekyll",
-    },
-    {
-      name: "oot-get",
-      title: "OOTS-Get",
-      summary:
-        "Command-line Python package to download all the comic images for " +
-        "the 'Order of the Stick' webcomic. Uses the 'Beautiful Soup' " +
-        "package for web-scraping. Option to only check for new comics. " +
-        "This was a personal learning-exercise on Python Web-scraping.",
-      github: "gnramsay/oots-get",
-      image: "assets/images/python.png",
-      website: "",
-      tech: "Python",
-    },
-    {
-      name: "linux-comfy-chair",
-      title: "Linux Comfy Chair",
-      summary:
-        "Auto provision a new (Ubuntu) linux install with latest updates, " +
-        "scripting tools and other handy items inlcuding latest Python, " +
-        "Ruby, Node, Perl and more. " +
-        "Great to get a new Virtual Machine or Cloud appliance quickly " +
-        "running and updated with no user input.",
-      github: "seapagan/linux-comfy-chair",
-      website: "",
-      tech: "Shell script",
     },
   ],
 };
