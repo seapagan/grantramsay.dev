@@ -69,6 +69,7 @@ export const settings = {
       image: "assets/images/python.png",
       github: "seapagan/poectrl",
       website: "https://pypi.org/project/poectrl/",
+      websiteTitle: "View on Pypi.org",
       tech: "Python",
     },
     {
@@ -152,6 +153,7 @@ export const settings = {
       github: "seapagan/openapi-readme",
       image: "assets/images/python.png",
       website: "https://pypi.org/project/openapi-readme/",
+      websiteTitle: "View on Pypi.org",
       tech: "Python",
     },
     {
@@ -202,7 +204,8 @@ export const settings = {
         "This was a personal learning-exercise on Python Web-scraping.",
       github: "gnramsay/oots-get",
       image: "assets/images/python.png",
-      website: "",
+      website: "https://pypi.org/project/oots-get/",
+      websiteTitle: "View on Pypi.org",
       tech: "Python",
     },
     {
