@@ -42,8 +42,8 @@ export const settings = {
         "or Framework is too much. It gives a real-time update in " +
         "development mode and optimized, minimized, bundled code for " +
         "production. JS/TS, CSS/SCSS/SASS ready.",
-      image: "assets/images/js-logo.png",
-      github: "seapagan/sb-build",
+      image: "assets/images/js-logo-small.png",
+      github: "seapagan/sp-build",
       website: "https://www.gnramsay.com",
       tech: "Javascript, Webpack",
     },
@@ -53,9 +53,9 @@ export const settings = {
       summary:
         "A web-based Shopping List written in plain-vanilla " +
         "JavaScript, using my sp-build system for development and packaging",
-      image: "assets/images/js-logo.png",
+      image: "assets/images/js-logo-small.png",
       github: "seapagan/shopping-list",
-      website: "shopping.seapagan.net",
+      website: "https://shopping.seapagan.net",
       tech: "Javascript, Webpack",
     },
     {
@@ -149,7 +149,7 @@ export const settings = {
       summary:
         "Generates Markdown suitable for a README file from a local " +
         "openapi.json file. Published to Pypi",
-      github: "gnramsay/openapi-readme",
+      github: "seapagan/openapi-readme",
       image: "assets/images/python.png",
       website: "https://pypi.org/project/openapi-readme/",
       tech: "Python",
